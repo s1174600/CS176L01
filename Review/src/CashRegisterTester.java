@@ -7,6 +7,9 @@ public class CashRegisterTester {
 		CashRegister input = new CashRegister();
 
 		 final double Sentinel = -1;
+		 final double DISCOUNT = .10;
+		 final double MINIMUMPURCHASE = 50;
+		 
 		 Scanner in = new Scanner(System.in);
 		 
 		 System.out.println("Enter a purchase amount or -1 to stop: ");
@@ -18,8 +21,11 @@ public class CashRegisterTester {
 				  System.out.println("Enter a purchase amount or -1 to stop: ");
 				  input.recordPurchase(itemAmount);
 			  }
-			  else {
-				  break;
+			  		else if(itemAmount == Sentinel) {
+			  			input.calcDiscount();
+			  			input.recordPurchasewithdiscount();
+			  			input.printcalcPurchase();
+			  			break;
 			  }
 		  }
 			  
