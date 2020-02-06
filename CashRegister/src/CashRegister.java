@@ -21,7 +21,7 @@ public class CashRegister {
 			}
 
 			public void printChange() {
-			System.out.printf("Your change is: %.2f", giveChange());
+			System.out.printf("Your change is: $%.2f", giveChange());
 			}
 
 

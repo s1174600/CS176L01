@@ -20,8 +20,7 @@ public class CashRegisterTester {
 					  input.recordPurchase(itemAmount);
 				  }
 				  else {
-					  break;
-				  }
+					  break;}
 			  }
 				  
 			 System.out.println("Enter a payment amount: ");
